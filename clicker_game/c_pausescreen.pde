@@ -1,0 +1,5 @@
+void pausescreen() {
+}
+
+void pausescreenClicks() {
+}

@@ -1,3 +1,5 @@
+//I love github
+
 int mode;
 final int INTRO = 0;
 final int OPTION = 1;
@@ -5,10 +7,19 @@ final int GAME = 2;
 final int PAUSE = 3;
 final int GAMEOVER = 4;
 
+PImage img;
+
 float vx, vy;
 
 float x, y; //target composition
 int score, lives;
+
+//circle for the target
+int white = 255;
+int diameter = 100;
+
+//cursur circle's x axis
+int ccx = 100;
 
 void setup() {
   size(800, 800);
@@ -35,6 +46,8 @@ void setup() {
 
   score = 0;
   lives = 3;
+  
+  img = loadImage("gear.png"); 
 }
 
 //////////////////////////////////////////////////////////////////////////////////////

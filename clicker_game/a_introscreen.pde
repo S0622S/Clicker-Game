@@ -49,6 +49,13 @@ void introscreen() {
   text("EASY", 400, 500);
   text("NORMAL", 400, 567);
   text("HARD", 400, 636);
+
+  //option box
+  fill(255);
+  strokeWeight(1);
+  rect(738, 718, 90, 90);
+
+  image(img, 700, 680, 80, 80);
 }
 
 
@@ -103,5 +110,8 @@ void introscreenClicks() {
     } else {
       vy = 5;
     }
+  }
+  if (mouseX >= 648 && mouseX <= 828 && mouseY >= 628 && mouseY <= 808) {
+    mode = OPTION;
   }
 }

@@ -6,17 +6,13 @@ void game() {
   text("Score; " + score, 400, 300);
   text("Lives; " + lives, 400, 200);
 
-  //drawing the target
-  stroke(0);
-  fill(255);
-  strokeWeight(2);
-  ellipse(x, y, 100, 100);
-
   x = x + vx;
   y = y + vy;
 
   if (y < 50 || y > 750 ) vy = vy * -1; //or -vy
   if (x < 50 || x > 750) vx = vx * -1;
+  
+  circle();
 }
 
 void gameClicks() {
@@ -39,3 +35,12 @@ void gameClicks() {
     //}
   }
 }
+
+void circle(){
+   //drawing the target
+  stroke(0);
+  fill(white);
+  strokeWeight(2);
+  ellipse(x, y, diameter, diameter);
+}
+  

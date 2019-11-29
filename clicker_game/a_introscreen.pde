@@ -55,7 +55,7 @@ void introscreen() {
   strokeWeight(1);
   rect(738, 718, 90, 90);
 
-  image(img, 700, 680, 80, 80);
+  image(img1, 700, 680, 80, 80);
 }
 
 

@@ -7,7 +7,8 @@ final int GAME = 2;
 final int PAUSE = 3;
 final int GAMEOVER = 4;
 
-PImage img;
+PImage img1;
+PImage img2;
 
 float vx, vy;
 
@@ -16,10 +17,14 @@ int score, lives;
 
 //circle for the target
 int white = 255;
+int black = 0;
+int blue = #0000FF;
+int green = #00FF00;
+int red = #FF0000;
 int diameter = 100;
 
 //cursur circle's x axis
-int ccx = 100;
+int ccx = 400;
 
 void setup() {
   size(800, 800);
@@ -47,7 +52,8 @@ void setup() {
   score = 0;
   lives = 3;
   
-  img = loadImage("gear.png"); 
+  img1 = loadImage("gear.png"); 
+  img2 = loadImage("back.png");
 }
 
 //////////////////////////////////////////////////////////////////////////////////////
